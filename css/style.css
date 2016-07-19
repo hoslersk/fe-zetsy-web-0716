@@ -2,12 +2,17 @@
 
 /* link the web font used for the level 1 heading here */
 
+@font-face {
+  font-family: 'Baskerville';
+  src: url('../fonts/Baskerville.ttc');
+}
+
 /*////////// Global Styles //////////*/
 
 body {
 	background: #F3EBE9;
 	font-size: 100%;
-	font-family: 'Times New Roman', serif; 
+	font-family: 'Times New Roman', serif;
 }
 
 .wrapper {
@@ -18,3 +23,92 @@ body {
 }
 
 /* Write all remaining styles here */
+
+
+
+/*///// LOGO /////*/
+
+h1 {
+	font-family: 'Baskerville', serif;
+	font-size: 5em;
+	/* color: rgba(158, 171, 164, 1) */
+	color: rgb(152,173,166);
+	padding-bottom: 10px;
+  margin: 0 0 5px;
+  font-weight: normal;
+  border-bottom: 1px solid #ccc;
+}
+
+h1 a:link, a:visited {
+  color: rgb(152,173,166);
+  text-decoration: none;
+}
+
+h1 a:hover {
+  color: rgb(111,127,122);
+  text-decoration: none;
+}
+
+h1 a:active {
+  color: rgb(111,127,122);
+	text-decoration: none;
+}
+
+/*///// NECKLACE IMG /////*/
+
+#featured img {
+	display: block;
+  border: 5px rgb(152,173,166) solid;
+}
+
+/*///// BODY /////*/
+
+h2 {
+  display: block;
+	font-size: 2em;
+	color: rgb(111,127,122);
+}
+
+p { /* select all <p> */
+  font-size: 1em; /* 16px, ?pt, 100%, 1em */
+	color: #555;
+}
+
+.text p a:link, a:visited {
+	color: #1783bb;
+	text-decoration: none;
+}
+
+.text p a:hover {
+	color: #1783bb;
+	text-decoration: underline;
+}
+
+
+/*///// PRESS LINKS /////*/
+
+#press img {
+	/*transition: border: #ccc 0.1s; */
+	border: 5px #ccc solid;
+  padding: 1px;
+  transition: border-color 0.1s ease;
+}
+
+#press a:link, a:visited {
+	text-decoration: none;
+}
+
+#press a:hover {
+	border-color: rgb(111,127,122);
+	/* border: rgb(111,127,122); */
+	text-decoration: none;
+}
+
+
+/*///// FOOTER /////*/
+
+.small {
+	font-size: 0.8em;
+	color: #555;
+	text-align: right;
+}
